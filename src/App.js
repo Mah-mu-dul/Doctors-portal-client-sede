@@ -8,6 +8,7 @@ import Reviews from './pages/Reviews/Reviews';
 import Contact from './pages/Contact/Contact';
 import Login from './pages/Login/Login';
 import Header from './pages/share/Header/Header';
+import Footer from './pages/share/Footer/Footer';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route path='/contact' element={<Contact></Contact>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
       </Routes>
+
+      <Footer></Footer>
 
 
 
