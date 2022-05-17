@@ -16,11 +16,10 @@ const Contactus = () => {
 
 
             </div>
-            <div className="">
-                <div class="form-control mx-auto mt-10  w-80 ">
-               
-                    <input type="text" placeholder="Email Address" class="input input-bordered w-full max-w-xs" />
-                    <input type="text" placeholder="Subject" class="input input-bordered w-full my-4 max-w-xs" />
+            <div className="w-screenn">
+                <div class="form-control mx-auto mt-10   lg:w-[50%]">
+                    <input type="text" placeholder="Email Address" class="input input-bordered " />
+                    <input type="text" placeholder="Subject" class="my-5 input input-bordered " />
                     <textarea class="textarea textarea-bordered" placeholder="Your messege"></textarea>
                     <div className="mx-auto m-4"><PrimaryBtn >Submit</PrimaryBtn></div>
                 </div>
