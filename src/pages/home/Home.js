@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../share/Footer/Footer';
 import Banner from './Banner';
 import Contactus from './Contactus';
 import Exceptional from './Exceptional';
@@ -17,6 +18,8 @@ const Home = () => {
             <HomeAppointment></HomeAppointment>
             <Testimonial></Testimonial>
             <Contactus></Contactus>
+            <Footer></Footer>
+
         </div>
     );
 };

@@ -5,7 +5,7 @@ import bg from '../../assets/images/appointment.png'
 const Contactus = () => {
     return (
         <section style={{
-            backgroundImage:`url(${bg})`,
+            backgroundImage: `url(${bg})`,
             backgroundSize: 'cover'
 
 
@@ -17,10 +17,10 @@ const Contactus = () => {
 
             </div>
             <div className="w-screenn">
-                <div class="form-control mx-auto mt-10   lg:w-[50%]">
-                    <input type="text" placeholder="Email Address" class="input input-bordered " />
-                    <input type="text" placeholder="Subject" class="my-5 input input-bordered " />
-                    <textarea class="textarea textarea-bordered" placeholder="Your messege"></textarea>
+                <div className="form-control mx-auto mt-10   lg:w-[50%]">
+                    <input type="text" placeholder="Email Address" className="input input-bordered " />
+                    <input type="text" placeholder="Subject" className="my-5 input input-bordered " />
+                    <textarea className="textarea textarea-bordered" placeholder="Your messege"></textarea>
                     <div className="mx-auto m-4"><PrimaryBtn >Submit</PrimaryBtn></div>
                 </div>
             </div>

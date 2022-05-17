@@ -1,9 +1,16 @@
 import React from 'react';
+import Footer from '../share/Footer/Footer';
+import Herocalander from './Herocalander';
 
 const Appinment = () => {
     return (
         <div>
-            this is from appoinment
+            <Herocalander></Herocalander>
+
+
+
+            <Footer></Footer>
+
         </div>
     );
 };

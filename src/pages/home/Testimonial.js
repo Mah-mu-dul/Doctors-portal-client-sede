@@ -41,7 +41,7 @@ const Testimonial = () => {
                     <h1 className="text-4xl">What out patients says</h1>
                 </div>
                 <div className="w-1/2 flex justify-end">
-                    <img className='' src={qut} alt="" />
+                    <img className='w-[150px]' src={qut} alt="" />
                 </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 mb-4">
