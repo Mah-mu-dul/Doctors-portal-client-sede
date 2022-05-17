@@ -6,9 +6,36 @@ import people3 from '../../assets/images/people3.png'
 import Reviewes from './Reviewes';
 
 const Testimonial = () => {
+    const reviews = [
+        {
+            _id: 1,
+            name: 'Kader Uddin',
+            place: 'Dhaka',
+            img: people1,
+            description: 'onek vnek valo service aro onek kicu ki r koitam tomakren . ekdom tolonai nek valo service aro onek kicu ki r koitam tomakren . ekdom tolonai hoynahoynaalo service. ekdom tolonai hoyna'
+
+        },
+        {
+            _id: 2,
+            name: 'Chokina Begom',
+            place: 'Dhaka',
+            img: people2,
+            description: 'onek vnek valo service aro onek kicu ki r koitam tomakren . ekdom tolonai nek valo service aro onek kicu ki r koitam tomakren . ekdom tolonai hoynahoynaalo service. ekdom tolonai hoyna'
+
+        },
+        {
+            _id: 3,
+            name: 'Komola Sundhori',
+            place: 'Dhaka',
+            img: people3,
+            description: 'onek vnek valo service aro onek kicu ki r koitam tomakren . ekdom tolonai nek valo service aro onek kicu ki r koitam tomakren . ekdom tolonai hoynahoynaalo service. ekdom tolonai hoyna'
+
+        }
+        
+    ]
     return (
-        <section >
-            <div className=" flex justify-between">
+        <section className='mt-12'>
+            <div className=" flex justify-between m-10 lg:m-16 sm:m-5">
                 <div className="m-4">
                     <h1 className="text-primary text-xl font-bold">Testimonial</h1>
                     <h1 className="text-4xl">What out patients says</h1>
@@ -17,10 +44,13 @@ const Testimonial = () => {
                     <img className='' src={qut} alt="" />
                 </div>
             </div>
-            <div className="lg:flex sm:block justify-evenly   ">
-                <Reviewes place='dhaka' name='kader uddin' img={people1} description='onek vnek valo service aro onek kicu ki r koitam tomakren . ekdom tolonai nek valo service aro onek kicu ki r koitam tomakren . ekdom tolonai hoynahoynaalo service. ekdom tolonai hoyna' ></Reviewes>
-                <Reviewes place='dhaka' name='kader uddin' img={people1} description='onek valo service aro onek kicu ki r koitam tomakren . ekdom tolonai hoyna nek valo service aro onek kicu ki r koitam tomakren . ekdom tolonai hoyna aro kicu kikhte hobe soman korte ta na' ></Reviewes>
-                <Reviewes place='dhaka' name='kader uddin' img={people1} description='onek valo service. ekdom tolonai nek valo service aro nek valo service aro onek kicu ki r koitam tomakren . ekdom tolonai hoynaonek kicu ki r koitam tomakren . ekdom tolonai hoynahoyna' ></Reviewes>
+            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 mb-4">
+                {
+                    reviews.map(review =>
+                        <Reviewes key={review._id} place={review.place} name={review.name} img={review.img} description={review.description}></Reviewes>
+                    )
+                }
+
             </div>
         </section>
     );
