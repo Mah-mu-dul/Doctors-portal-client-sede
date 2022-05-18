@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import chair from '../../assets/images/chair.png'
 import bg from '../../assets/images/bg.png'
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
-import { format } from 'date-fns';
 
 
-const Herocalander = () => {
-    const [selected, setSelected] = useState(new Date())
+const Herocalander = ( {selected, setSelected}) => {
     return (
         <section>
             <div className="hero " style={{ backgroundImage: `url('${bg}')`, backgroundRepeat: 'no-repeat', overflow: 'hidden' }}>
@@ -23,7 +21,6 @@ const Herocalander = () => {
                                 selected={selected}
                                 onSelect={setSelected}
                             />
-                            <p className='text-center'>You picked {format(selected, 'PP')}.</p>
                         </div>
                     </div>
                 </div>
