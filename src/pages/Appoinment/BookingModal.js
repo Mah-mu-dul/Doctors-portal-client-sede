@@ -1,8 +1,12 @@
 import React from 'react';
 import ModalForm from './ModalForm';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+
 
 const BookingModal = ({ treatment, date, setTreatment}) => {
     const {name, slots} = treatment
+    const [user] = useAuthState(auth)
     return (
         <div>
             <input type="checkbox" id="bookingModal" className="modal-toggle" />
@@ -15,6 +19,8 @@ const BookingModal = ({ treatment, date, setTreatment}) => {
                     slots = {slots}
                     setTreatment ={setTreatment}
                     treatment={treatment}
+                    user={user}
+
                     ></ModalForm>
                     
                 </div>
